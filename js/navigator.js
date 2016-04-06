@@ -24,6 +24,7 @@ function invalidatePage() {
     var page = getAdjCurrentPage();
     //loadContents("html/" + page + "c.html", $(".contents"));
     loadHtmlPage(page, $(".contents"));
+    //TODO: doesn't work when going back from external website
     var selected = 0; // default
     var tabs = $("paper-tab");
     for (var i = 0; i < tabs.length; i++) {
@@ -33,7 +34,6 @@ function invalidatePage() {
             break;
         }
     }
-    // Polymer.querySelector("paper-tabs").select(selected);
     try {
         Polymer.dom(document).querySelector("paper-tabs").select(selected);
     }catch (e) {} // ignore

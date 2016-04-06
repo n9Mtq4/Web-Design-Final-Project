@@ -117,6 +117,8 @@ var search = {
         if (search.firstTime) {
             search.ajaxit();
             search.firstTime = false;
+            //TODO: remove search not indexed notification
+            alert("Pages haven't been indexed yet, but\nfeel free to play around with searching\nthe examples.\n-Will Bresnahan");
         }
         if ($('#field').val().trim() == "") {
             search.toggleSearch();

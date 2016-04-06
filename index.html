@@ -28,16 +28,23 @@
         <paper-icon-button id="clearbutton" icon="clear"></paper-icon-button>
         <paper-icon-button id="searchbutton" icon="search"></paper-icon-button>
         <paper-tabs class="bottom fit" selected="0"><!--TODO: try to remove bottom padding?-->
-            <paper-tab class="navbartab" data-goto="index">Index</paper-tab>
-            <paper-tab class="navbartab" data-goto="404">Page1</paper-tab>
-            <paper-tab class="navbartab" data-goto="index">Page2</paper-tab>
-            <paper-tab class="navbartab" data-goto="index">Page3</paper-tab>
+            <paper-tab class="navbartab" data-goto="index">Home</paper-tab>
+            <paper-tab class="navbartab" data-goto="culture">Culture</paper-tab>
+            <paper-tab class="navbartab" data-goto="tosee">Things to see</paper-tab>
+            <paper-tab class="navbartab" data-goto="citations">Citations</paper-tab>
         </paper-tabs>
     </paper-toolbar>
     
     <div class="hide" id="searchResultSpace"><!--loads through search.js--></div>
     <div class="contents"><!--loads through navigator.js--></div>
 </paper-header-panel>
+
+<script>
+    //TODO: shouldn't be js in body!
+    try {
+        Polymer.dom(document).querySelector("paper-tabs").select(0);
+    }catch (e) {} // ignore
+</script>
 
 <!--banners/notifications-->
 <noscript class="banner hstretch" id="nojs">
