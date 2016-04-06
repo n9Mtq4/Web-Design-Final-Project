@@ -35,6 +35,11 @@ body {
     height: auto;
 }
 
+.smallimage {
+    width: 200px;
+    height: auto;
+}
+
 .card {
     padding: 25px 16px;
     background-color: snow;
