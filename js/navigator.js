@@ -15,6 +15,11 @@ $(document).ready(function() {
     
 });
 
+$(window).on("popstate", function(e) {
+    invalidatePage();
+});
+
+
 function invalidatePage() {
     var page = getAdjCurrentPage();
     //loadContents("html/" + page + "c.html", $(".contents"));
@@ -23,13 +28,11 @@ function invalidatePage() {
     var tabs = $("paper-tab");
     for (var i = 0; i < tabs.length; i++) {
         var tab = tabs[i];
-        console.log(tab);
         if ($(tab).data("goto") == page.toLowerCase()) {
             selected = i;
             break;
         }
     }
-    console.log(selected);
     // Polymer.querySelector("paper-tabs").select(selected);
     try {
         Polymer.dom(document).querySelector("paper-tabs").select(selected);
@@ -71,9 +74,10 @@ function requiresc() {
     }
 }
 
+
 function goto(str) {
     // window.location.search = jQuery.query.set("page", str);
-    window.history.pushState({"html":"","pageTitle":document.title},"", "index.html?page=" + str);
+    window.history.pushState({"html":document.innerHTML,"pageTitle":document.title},"", "index.html?page=" + str);
     invalidatePage();
 }
 
