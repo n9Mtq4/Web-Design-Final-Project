@@ -19,6 +19,21 @@ function invalidatePage() {
     var page = getAdjCurrentPage();
     //loadContents("html/" + page + "c.html", $(".contents"));
     loadHtmlPage(page, $(".contents"));
+    var selected = 0; // default
+    var tabs = $("paper-tab");
+    for (var i = 0; i < tabs.length; i++) {
+        var tab = tabs[i];
+        console.log(tab);
+        if ($(tab).data("goto") == page.toLowerCase()) {
+            selected = i;
+            break;
+        }
+    }
+    console.log(selected);
+    // Polymer.querySelector("paper-tabs").select(selected);
+    try {
+        Polymer.dom(document).querySelector("paper-tabs").select(selected);
+    }catch (e) {} // ignore
 }
 
 function getAdjCurrentPage() {
