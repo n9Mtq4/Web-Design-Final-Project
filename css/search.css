@@ -1,0 +1,107 @@
+/*css file for search*/
+
+.link {
+    padding-bottom: 0px;
+}
+
+ol.resultList {
+}
+
+.shownLink {
+    color: #006621;
+}
+
+.resultRow {
+    /*border: solid 1px #d9d9d9*/
+}
+
+.resultSep {
+    width: 500px;
+}
+
+/* div container containing the form  */
+#searchContainer {
+    margin: 8px;
+    margin-top: 10px;
+    display: block;
+}
+/*#searchDiv {
+  position: fixed;
+}*/
+
+/* Style the search input field. */
+#field {
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 27px;
+    line-height: 27px;
+    text-indent: 10px;
+    font-family: arial, sans-serif;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    /*background-color: #03A9F4;*/
+    background-color: #0000bd;
+    /*background: #fff;*/
+    /*background: #03A9F4;*/
+    border: solid 0px #d9d9d9;
+    /*border-top: solid 1px #c0c0c0;*/
+    /*border-right: none;*/
+}
+
+#field::-webkit-input-placeholder { /* WebKit browsers */
+    color: rgb(255, 255, 255);
+}
+#field:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+#field::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+#field:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: rgb(255, 255, 255);
+}
+
+#field:focus {
+    outline: 0;
+}
+
+#submit {
+    margin-top: -2px;
+}
+
+/* Style the search button hover state */
+/* Clear floats */
+.fclear {
+    clear: both;
+}
+
+#maintoolbar {
+    background-color: #03A9F4;
+}
+
+#maintoolbarcontainer {
+    position: fixed;
+    z-index: 100 !important;
+    width: 100%;
+    margin-bottom: 100px !important;
+}
+
+/*
+SEARCH RESULT STYLES
+*/
+
+#searchResultSpace {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 90;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: scroll !important;
+}
+
+
+
+

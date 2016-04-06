@@ -1,0 +1,51 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../n9mtq4-linkbutton/n9mtq4-linkbutton.html">
+
+<dom-module id="n9mtq4-spoiler">
+    
+    <style>
+        
+        .spoilerContents {
+            display: none;
+        }
+        
+    </style>
+    
+    <template>
+        
+        <div class="spoilerDiv">
+            <n9mtq4-linkbutton class="spoilerButton" colour="{{colour}}">{{name}}</n9mtq4-linkbutton>
+            <div class="spoilerContents">
+                <content></content>
+            </div>
+        </div>
+        
+    </template>
+    
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'n9mtq4-spoiler',
+        properties: {
+            name: {
+                type: String,
+                reflectToAttribute: true,
+                value: 'Spoiler'
+            },
+            colour: {
+                type: String,
+                reflectToAttribute: true,
+                value: 'inherit'
+            }
+        },
+        ready: function() {
+            var div = $(this).children(".spoilerDiv");
+            var button = div.children(".spoilerButton");
+            var contents = div.children(".spoilerContents");
+            button.click(function() {
+                contents.toggle();
+            });
+        }
+    });
+</script>

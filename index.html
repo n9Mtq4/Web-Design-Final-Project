@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Paris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--mobile scaling-->
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/jquery.query-object.js"></script>
+    <script src="webcomponentsjs/webcomponents.min.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/material.js"></script>
+    <script src="js/navigator.js"></script>
+</head>
+<body class="givematerialcolour" data-colour="18"><!--TODO: change colour-->
+
+<script>
+    requires("iron-icons", "paper-toolbar", "paper-header-panel", "paper-icon-button", "paper-tabs", "paper-tab");
+</script>
+
+<paper-header-panel id="header" class="flex hstretch">
+    
+    <paper-toolbar id="toolbar" class="medium-tall">
+        <div title><a id="home" href="javascript:goto('index');">
+            <b>Paris Web Brochure</b>
+        </a></div>
+        <input id="field" placeholder="Search" name="field" type="text" />
+        <paper-icon-button id="clearbutton" icon="clear"></paper-icon-button>
+        <paper-icon-button id="searchbutton" icon="search"></paper-icon-button>
+        <paper-tabs class="bottom fit" selected="0"><!--TODO: try to remove bottom padding?-->
+            <paper-tab class="navbartab" data-goto="index">Index</paper-tab>
+            <paper-tab class="navbartab" data-goto="404">Page1</paper-tab>
+            <paper-tab class="navbartab" data-goto="index">Page2</paper-tab>
+            <paper-tab class="navbartab" data-goto="index">Page3</paper-tab>
+        </paper-tabs>
+    </paper-toolbar>
+    
+    <div class="hide" id="searchResultSpace"><!--loads through search.js--></div>
+    <div class="contents"><!--loads through navigator.js--></div>
+</paper-header-panel>
+
+<!--banners/notifications-->
+<noscript class="banner hstretch" id="nojs">
+    For full functionality of this site it is necessary to enable JavaScript.
+    Here are the <a href="http://www.enable-javascript.com/" target="_blank">
+    instructions how to enable JavaScript in your web browser</a>.
+</noscript>
+
+</body>
+</html>

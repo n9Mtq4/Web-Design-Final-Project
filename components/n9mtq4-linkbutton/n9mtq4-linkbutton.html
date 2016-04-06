@@ -1,0 +1,56 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-button/paper-button.html">
+
+<dom-module id="n9mtq4-linkbutton">
+    
+    <style>
+        
+        .linkbuttonLink {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: normal;
+            color: inherit;
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+            overflow: visible;
+        }
+        .linkbuttonButton {
+        }
+        
+    </style>
+    
+    <template>
+        <a href="{{href}}" class="linkbuttonLink">
+            <paper-button class="linkbuttonButton" raised>
+                <content></content>
+            </paper-button>
+        </a>
+    </template>
+    
+</dom-module>
+
+<script>
+    Polymer({
+        
+        is: 'n9mtq4-linkbutton',
+        
+        properties: {
+            href: {
+                type: String,
+                reflectToAttribute: true,
+                value: '#'
+            },
+            colour: {
+                type: String,
+                reflectToAttribute: true,
+                value: 'inherit',
+                observer: '_setColour'
+            }
+        },
+        _setColour: function() {
+//            $(this).css('backgroundColour', this.colour);
+            $(this).children(".linkbuttonLink").children(".linkbuttonButton").css('backgroundColor', this.colour);
+        }
+    });
+</script>

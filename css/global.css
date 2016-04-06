@@ -1,0 +1,81 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#toolbar {
+    background-color: #0000bd;
+}
+
+#home {
+    color: inherit;
+    text-decoration: none;
+}
+
+.banner {
+    z-index: 1000;
+    font-size: xx-large;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    padding-bottom: 100%;
+}
+
+.hstretch {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100% !important;
+}
+
+.thumbnail {
+    width: 16px;
+    height: auto;
+}
+
+.card {
+    padding: 25px 16px;
+    background-color: snow;
+    color: black;
+}
+
+.padding {
+    margin-bottom: 15px;
+}
+
+.float {
+    display: inline-block;
+    position: fixed;
+}
+
+.hide {
+    display: none;
+}
+
+.contents {
+    padding: 40px;
+}
+
+#header {
+    position: fixed;
+    z-index: 100 !important;
+    margin-bottom: 100px !important;
+}
+
+.mediumimage {
+    height: 200px;
+    width: auto;
+}
+
+.noverticalmargin {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.centertext {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,7 @@
+[
+
+["Nothing matches the search results", "congratz, you found nothing", "null", "javascript:alert('nothing to click');"],
+["Home", "Go to the home page", "home, index, paris", "javascript:goto('index')"],
+["Example title", "Example description", "keyword1, keyword1, a, b, c, d, e, f, g, h, i, j, k, o, q, u", "javascript:alert('example action');"]
+
+]

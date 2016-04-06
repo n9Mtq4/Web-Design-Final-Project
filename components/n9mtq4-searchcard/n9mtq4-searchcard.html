@@ -1,0 +1,75 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-material/paper-material.html">
+
+<dom-module id="n9mtq4-searchcard">
+    
+    <style>
+        .searchShadowCard {
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 6px 16px;
+            margin-top: 6px;
+            background-color: snow;
+        }
+        .description {
+            color: black;
+            overflow: visible;
+        }
+        .searchLink {
+            z-index: 99;
+            color: blue;
+            text-decoration: none;
+        }
+        .url {
+            font-size: small;
+            color: rgb(0, 102, 33);
+            overflow: hidden;
+        }
+        .description {
+            color: black;
+            font-size: medium;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .title {
+            font-weight: bold;
+            font-size: larger;
+        }
+    </style>
+    
+    <template>
+        <a href="{{href}}" title="{{desc}}" class="searchLink">
+            <paper-material elevation="4" class="searchShadowCard">
+                <div class="title">{{title}}</div>
+                <div class="url">{{href}}</div>
+                <div class="description">{{desc}}</div>
+            </paper-material>
+        </a>
+    </template>
+    
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'n9mtq4-searchcard',
+        properties: {
+            
+            title: {
+                type: String,
+                reflectToAttribute: true,
+                value: "Oops"
+            },
+            desc: {
+                type: String,
+                reflectToAttribute: true,
+                value: "Something is wrong with the template"
+            },
+            href: {
+                type: String,
+                reflectToAttribute: true,
+                value: "#"
+            }
+            
+        }
+    });
+</script>
