@@ -29,21 +29,47 @@
             It stands in the centre of the Place Charles de Gaulle,
             at the western end of the Champs-Élysées. The Arc de Triomphe is located in the
             center of a "star" of streets radiating out of it. The main street is called the
-            Champs-Élysées. The radiating streets are visible in the panorama below.
+            Champs-Élysées. The radiating streets are visible in the panorama
+            (taken from the top of the Arc de Triomphe) below.
         </div>
         
         <div class="panodiv">
-            <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="http://cdn.pannellum.org/2.2/pannellum.htm?panorama=http://n9mtq4.com/Web-Design-Final-Project/img/pano2.jpg"></iframe>
+            <!--TODO: LOW use json api for autoRotateInactivityDelay -->
+            <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="http://cdn.pannellum.org/2.2/pannellum.htm?autoLoad=true&autoRotate=-1&hfov=60&panorama=http://n9mtq4.com/Web-Design-Final-Project/img/pano2.jpg"></iframe>
         </div>
         
     </paper-material>
 
-    <paper-material elevation="4" class="card padding" id="notredamme">
-        <h1>Notre Damme</h1>
+    <paper-material elevation="4" class="card padding" id="notredame">
+        <h1>Notre Dame</h1>
+        
+        <img src="img/notredame1.jpg" alt="Notre Dame" class="smallimage par" id="noredameimg">
+        
+        <div id="dame" class="info par">
+
+            Notre-Dame de Paris, also known Notre Dame, is a historic Catholic
+            cathedral on the eastern half of the Île de la Cité
+            in the fourth arrondissement of Paris, France.
+            
+        </div>
+        
     </paper-material>
     
     <paper-material elevation="4" class="card padding" id="louve">
-        <h1>The Louve</h1>
+        <h1>The Louvre</h1>
+        
+        <img src="img/louvre1.jpg" alt="Louvre Pyramid" class="smallimage par" id="louvreimg">
+        <img src="//upload.wikimedia.org/wikipedia/commons/d/d5/Mona_Lisa_(copy,_Hermitage).jpg" alt="Louvre Muesum" class="smallimage par" id="louvreimg1"><!--TODO: add as source-->
+        
+        <div id="louvre" class="info par">
+            The Louvre Pyramid is a large glass and metal pyramid,
+            surrounded by three smaller pyramids,
+            in the main courtyard of the Louvre Palace in Paris.
+            The large pyramid serves as the main entrance to the Louvre Museum.
+            The Louvre is one of the largest and most famous art museums in
+            the world. The most famous painting in the Louvre is the Mona Lisa.
+        </div>
+        
     </paper-material>
     
 </div>
