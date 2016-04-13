@@ -19,7 +19,6 @@ $(window).on("popstate", function(e) {
     invalidatePage();
 });
 
-/*FIXME: doesn't work*/
 function css() {
     for (var i = 0; i < arguments.length; i++) {
         /*http://stackoverflow.com/a/26514362*/
@@ -28,7 +27,6 @@ function css() {
             "type": "text/css",
             "href": "css/" + arguments[i] + ".css"
         });
-        // document.getElementsByTagName("head")[0].appendChild(css);
         $("head").append(css);
     }
 }
