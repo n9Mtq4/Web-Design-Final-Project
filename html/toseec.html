@@ -3,30 +3,45 @@
 </script>
 
 <div id="toSeeContents">
-
-    <paper-material elevation="4" class="card" id="note">
-        <h2>This page is laggy because the images are way too big. This will be fixed soon.</h2>
-    </paper-material>
-    <div class="padding"></div>
     
-    <paper-material elevation="4" class="card" id="eiffeltower">
+    <!--TODO: get img and div to be next to each other-->
+    
+    <paper-material elevation="4" class="card padding" id="eiffeltower">
         <h1>The Eiffel Tower</h1>
-        <img src="img/eiffeltower1.jpeg" alt="Eiffel Tower" class="smallimage">
+        
+        <div class="par"><img src="img/eiffeltower1.jpg" alt="Eiffel Tower" class="smallimage"></div>
+        
+        <div id="eiffel" class="info par">
+            The Eiffel Tower is an iron lattice tower located on the Champ de Mars in Paris.
+            It was named after the engineer Gustave Eiffel,
+            whose company designed and built the tower.
+        </div>
+        
     </paper-material>
     
-    <div class="padding"></div>
-    <paper-material elevation="4" class="card" id="arcdetriomphe">
+    <paper-material elevation="4" class="card padding" id="arcdetriomphe">
         <h1>The Arc De Triomphe</h1>
-        <img src="img/arcdetriomphe1.jpg" alt="Arc De Triomphe" class="smallimage">
+        
+        <img src="img/arcdetriomphe1.jpg" alt="Arc De Triomphe" class="smallimage pad">
+        
+        <div id="arc" class="info par">
+            The Arc de Triomphe de l'Étoile is one of the most famous monuments in Paris.
+            It stands in the centre of the Place Charles de Gaulle,
+            at the western end of the Champs-Élysées.
+        </div>
+        
+        <div class="panodiv">
+            Panorama from top
+            <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://cdn.pannellum.org/2.2/pannellum.htm?panorama="></iframe>
+        </div>
+        
     </paper-material>
 
-    <div class="padding"></div>
-    <paper-material elevation="4" class="card" id="notredamme">
+    <paper-material elevation="4" class="card padding" id="notredamme">
         <h1>Notre Damme</h1>
     </paper-material>
     
-    <div class="padding"></div>
-    <paper-material elevation="4" class="card" id="louve">
+    <paper-material elevation="4" class="card padding" id="louve">
         <h1>The Louve</h1>
     </paper-material>
     
