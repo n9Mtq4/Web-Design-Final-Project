@@ -117,8 +117,8 @@ var search = {
         if (search.firstTime) {
             search.ajaxit();
             search.firstTime = false;
-            //TODO: remove search not indexed notification
-            alert("Pages haven't been indexed yet, but\nfeel free to play around with searching\nthe examples.\n-Will Bresnahan");
+            //TODO: DONE remove search not indexed notification
+            // alert("Pages haven't been indexed yet, but\nfeel free to play around with searching\nthe examples.\n-Will Bresnahan");
         }
         if ($('#field').val().trim() == "") {
             search.toggleSearch();
@@ -175,7 +175,10 @@ var search = {
             },
             error: function(data) {
                 /*try again*/
-                search.ajaxit();
+                //TODO: this is a bad thing
+                //Commented for now
+                alert("Error loading the search database. Reload the page and try again");
+                // search.ajaxit();
             }
         })
     }

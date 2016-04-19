@@ -1,7 +1,10 @@
 [
 
 ["Nothing matches the search results", "congratz, you found nothing", "null", "javascript:alert('nothing to click');"],
-["Home", "Go to the home page", "home, index, paris", "javascript:goto('index')"],
-["Example title", "Example description", "keyword1, keyword1, a, b, c, d, e, f, g, h, i, j, k, o, q, u", "javascript:alert('example action');"]
+["Home", "Go to the home page", "home, index, paris, welcome", "g:index"],
+["Culture", "A page about french culture", "culture, money, dollar, euro, language, french, currency, religion, catholic, christian, art, painting, famous", "g:culture"],
+["Things To See", "A page about what to see when in Paris", "eiffel, tower, arc, de, triomphe, notre, dame, louvre, pyramid, catholic, paris, champs, panorama, mona, lisa", "g:tosee"],
+["Food", "A page about what to eat when in Paris", "food, croissant, pain, au, chocolat, steak, frites, baguette, gruyère, gruyere, cheese, gougères, gougeres, crêpe, crepe, pastry, cheese, pancake", "g:food"],
+["Citations", "All the sources of the images and info", "citations, cite, sources, source, info, information", "g:citations"]
 
 ]
